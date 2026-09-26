@@ -46,7 +46,7 @@ jobs:
           node-version: 22
       - name: Install contract dependencies
         working-directory: contracts
-        run: npm ci
+        run: npm ci --omit=optional
       - name: Compile TrustRegistry
         working-directory: contracts
         run: npm run build
