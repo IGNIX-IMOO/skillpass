@@ -1,0 +1,182 @@
+[
+  {
+    "name": "consume_one",
+    "inputs": {
+      "quota3": 0,
+      "quota2": 1,
+      "quota1": 0,
+      "quota0": 1,
+      "consume": 1,
+      "license_valid": 1,
+      "service_available": 1
+    },
+    "expected": {
+      "allow": 1,
+      "deny_reason1": 0,
+      "deny_reason0": 0,
+      "remaining3": 0,
+      "remaining2": 1,
+      "remaining1": 0,
+      "remaining0": 0
+    },
+    "blif": {
+      "allow": 1,
+      "deny_reason1": 0,
+      "deny_reason0": 0,
+      "remaining3": 0,
+      "remaining2": 1,
+      "remaining1": 0,
+      "remaining0": 0
+    },
+    "stateOut": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "name": "probe_only",
+    "inputs": {
+      "quota3": 0,
+      "quota2": 0,
+      "quota1": 1,
+      "quota0": 1,
+      "consume": 0,
+      "license_valid": 1,
+      "service_available": 1
+    },
+    "expected": {
+      "allow": 1,
+      "deny_reason1": 0,
+      "deny_reason0": 0,
+      "remaining3": 0,
+      "remaining2": 0,
+      "remaining1": 1,
+      "remaining0": 1
+    },
+    "blif": {
+      "allow": 1,
+      "deny_reason1": 0,
+      "deny_reason0": 0,
+      "remaining3": 0,
+      "remaining2": 0,
+      "remaining1": 1,
+      "remaining0": 1
+    },
+    "stateOut": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "invalid_license",
+    "inputs": {
+      "quota3": 0,
+      "quota2": 1,
+      "quota1": 0,
+      "quota0": 0,
+      "consume": 1,
+      "license_valid": 0,
+      "service_available": 1
+    },
+    "expected": {
+      "allow": 0,
+      "deny_reason1": 0,
+      "deny_reason0": 1,
+      "remaining3": 0,
+      "remaining2": 1,
+      "remaining1": 0,
+      "remaining0": 0
+    },
+    "blif": {
+      "allow": 0,
+      "deny_reason1": 0,
+      "deny_reason0": 1,
+      "remaining3": 0,
+      "remaining2": 1,
+      "remaining1": 0,
+      "remaining0": 0
+    },
+    "stateOut": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "name": "service_unavailable",
+    "inputs": {
+      "quota3": 0,
+      "quota2": 1,
+      "quota1": 0,
+      "quota0": 0,
+      "consume": 1,
+      "license_valid": 1,
+      "service_available": 0
+    },
+    "expected": {
+      "allow": 0,
+      "deny_reason1": 1,
+      "deny_reason0": 0,
+      "remaining3": 0,
+      "remaining2": 1,
+      "remaining1": 0,
+      "remaining0": 0
+    },
+    "blif": {
+      "allow": 0,
+      "deny_reason1": 1,
+      "deny_reason0": 0,
+      "remaining3": 0,
+      "remaining2": 1,
+      "remaining1": 0,
+      "remaining0": 0
+    },
+    "stateOut": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "name": "quota_exhausted",
+    "inputs": {
+      "quota3": 0,
+      "quota2": 0,
+      "quota1": 0,
+      "quota0": 0,
+      "consume": 1,
+      "license_valid": 1,
+      "service_available": 1
+    },
+    "expected": {
+      "allow": 0,
+      "deny_reason1": 1,
+      "deny_reason0": 1,
+      "remaining3": 0,
+      "remaining2": 0,
+      "remaining1": 0,
+      "remaining0": 0
+    },
+    "blif": {
+      "allow": 0,
+      "deny_reason1": 1,
+      "deny_reason0": 1,
+      "remaining3": 0,
+      "remaining2": 0,
+      "remaining1": 0,
+      "remaining0": 0
+    },
+    "stateOut": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]

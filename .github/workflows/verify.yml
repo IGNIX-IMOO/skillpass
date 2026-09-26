@@ -1,0 +1,55 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  circuits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify Skill Gate Core
+        working-directory: hackathons/tapeout-xlayer-2026/circuits/skill-gate
+        run: node verify.mjs
+      - name: Verify License Quota Core
+        working-directory: hackathons/tapeout-xlayer-2026/circuits/license-quota-step
+        run: node verify.mjs
+      - name: Verify Controlled Demo Flow
+        working-directory: runtime/controlled-demo
+        run: node verify.mjs
+      - name: Verify TapeOut Netlist Compiler
+        working-directory: runtime/tapeout
+        run: node verify.mjs
+  app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install app dependencies
+        working-directory: app
+        run: npm ci
+      - name: Build control room
+        working-directory: app
+        run: npm run build
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install contract dependencies
+        working-directory: contracts
+        run: npm ci
+      - name: Compile TrustRegistry
+        working-directory: contracts
+        run: npm run build
+      - name: Test TrustRegistry
+        working-directory: contracts
+        run: npm test

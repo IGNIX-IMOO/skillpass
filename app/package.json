@@ -1,0 +1,34 @@
+{
+  "name": "skillpass-console",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "demo:build": "node ../runtime/ownership-demo/build-package.mjs",
+    "dev": "vite",
+    "prebuild": "npm run demo:build",
+    "build": "tsc -b && vite build",
+    "build:public": "node scripts/build-public.mjs",
+    "start": "node server.mjs",
+    "test:e2e": "playwright test",
+    "verify:onchain": "node scripts/verify-onchain.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@noble/ciphers": "^2.4.0",
+    "@noble/curves": "^2.0.1",
+    "ethers": "^6.15.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "shamir-secret-sharing": "^0.0.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}

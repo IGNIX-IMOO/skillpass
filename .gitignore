@@ -1,0 +1,19 @@
+.DS_Store
+node_modules/
+dist/
+dist-public/
+test-results/
+playwright-report/
+contracts/artifacts/
+app/.data/
+runtime/ownership-demo/.generated/
+artifacts/
+*.tsbuildinfo
+
+# never commit credentials
+.env
+.env.*
+!.env.example
+provider.json
+*.key
+*.pem

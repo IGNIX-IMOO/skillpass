@@ -1,0 +1,107 @@
+.model license_quota_step
+.inputs consume license_valid service_available
+.outputs allow deny_reason1 deny_reason0 remaining3 remaining2 remaining1 remaining0
+
+# Independent validation signals.
+.names license_valid not_license
+0 1
+
+.names license_valid service_available service_fail
+10 1
+
+.names license_valid service_available active
+11 1
+
+.names quota3 quota2 quota1 quota0 any_quota
+---1 1
+--1- 1
+-1-- 1
+1--- 1
+
+.names any_quota zero_quota
+0 1
+
+.names active any_quota allow
+11 1
+
+.names active zero_quota exhausted
+11 1
+
+.names service_fail exhausted deny_reason1
+1- 1
+-1 1
+
+.names not_license exhausted deny_reason0
+1- 1
+-1 1
+
+.names allow consume decrement
+11 1
+
+# Four-bit decrementer for quota - 1.
+.names quota0 not_quota0
+0 1
+
+.names quota1 not_quota1
+0 1
+
+.names quota2 not_quota2
+0 1
+
+.names not_quota0 diff0
+1 1
+
+.names not_quota0 borrow1
+1 1
+
+.names quota1 borrow1 xor1
+01 1
+10 1
+
+.names xor1 diff1
+1 1
+
+.names not_quota1 borrow1 borrow2
+11 1
+
+.names quota2 borrow2 xor2
+01 1
+10 1
+
+.names xor2 diff2
+1 1
+
+.names not_quota2 borrow2 borrow3
+11 1
+
+.names quota3 borrow3 xor3
+01 1
+10 1
+
+.names xor3 diff3
+1 1
+
+# Select the decremented value only when this call consumes one unit.
+.names decrement diff0 quota0 remaining0
+0-1 1
+11- 1
+
+.names decrement diff1 quota1 remaining1
+0-1 1
+11- 1
+
+.names decrement diff2 quota2 remaining2
+0-1 1
+11- 1
+
+.names decrement diff3 quota3 remaining3
+0-1 1
+11- 1
+
+# stateOut is the next quota. Persistent storage is the Registry's job.
+.latch remaining0 quota0
+.latch remaining1 quota1
+.latch remaining2 quota2
+.latch remaining3 quota3
+
+.end

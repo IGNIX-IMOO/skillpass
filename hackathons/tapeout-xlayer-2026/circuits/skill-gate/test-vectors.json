@@ -1,0 +1,130 @@
+[
+  {
+    "name": "allow_research_to_story",
+    "inputs": {
+      "skill_id3": 1,
+      "skill_id2": 1,
+      "skill_id1": 0,
+      "skill_id0": 1,
+      "skill_valid": 1,
+      "licensed": 1,
+      "service_available": 1,
+      "license_type1": 0,
+      "license_type0": 1
+    },
+    "expected": {
+      "allow": 1,
+      "route_id3": 1,
+      "route_id2": 1,
+      "route_id1": 0,
+      "route_id0": 1,
+      "royalty_bucket1": 0,
+      "royalty_bucket0": 1
+    },
+    "blif": {
+      "allow": 1,
+      "route_id3": 1,
+      "route_id2": 1,
+      "route_id1": 0,
+      "route_id0": 1,
+      "royalty_bucket1": 0,
+      "royalty_bucket0": 1
+    }
+  },
+  {
+    "name": "reject_missing_license",
+    "inputs": {
+      "skill_id3": 1,
+      "skill_id2": 0,
+      "skill_id1": 0,
+      "skill_id0": 0,
+      "skill_valid": 1,
+      "licensed": 0,
+      "service_available": 1,
+      "license_type1": 1,
+      "license_type0": 1
+    },
+    "expected": {
+      "allow": 0,
+      "route_id3": 0,
+      "route_id2": 0,
+      "route_id1": 0,
+      "route_id0": 0,
+      "royalty_bucket1": 0,
+      "royalty_bucket0": 0
+    },
+    "blif": {
+      "allow": 0,
+      "route_id3": 0,
+      "route_id2": 0,
+      "route_id1": 0,
+      "route_id0": 0,
+      "royalty_bucket1": 0,
+      "royalty_bucket0": 0
+    }
+  },
+  {
+    "name": "reject_invalid_skill",
+    "inputs": {
+      "skill_id3": 0,
+      "skill_id2": 1,
+      "skill_id1": 1,
+      "skill_id0": 1,
+      "skill_valid": 0,
+      "licensed": 1,
+      "service_available": 1,
+      "license_type1": 0,
+      "license_type0": 0
+    },
+    "expected": {
+      "allow": 0,
+      "route_id3": 0,
+      "route_id2": 0,
+      "route_id1": 0,
+      "route_id0": 0,
+      "royalty_bucket1": 0,
+      "royalty_bucket0": 0
+    },
+    "blif": {
+      "allow": 0,
+      "route_id3": 0,
+      "route_id2": 0,
+      "route_id1": 0,
+      "route_id0": 0,
+      "royalty_bucket1": 0,
+      "royalty_bucket0": 0
+    }
+  },
+  {
+    "name": "reject_service_unavailable",
+    "inputs": {
+      "skill_id3": 1,
+      "skill_id2": 1,
+      "skill_id1": 0,
+      "skill_id0": 0,
+      "skill_valid": 1,
+      "licensed": 1,
+      "service_available": 0,
+      "license_type1": 1,
+      "license_type0": 0
+    },
+    "expected": {
+      "allow": 0,
+      "route_id3": 0,
+      "route_id2": 0,
+      "route_id1": 0,
+      "route_id0": 0,
+      "royalty_bucket1": 0,
+      "royalty_bucket0": 0
+    },
+    "blif": {
+      "allow": 0,
+      "route_id3": 0,
+      "route_id2": 0,
+      "route_id1": 0,
+      "route_id0": 0,
+      "royalty_bucket1": 0,
+      "royalty_bucket0": 0
+    }
+  }
+]

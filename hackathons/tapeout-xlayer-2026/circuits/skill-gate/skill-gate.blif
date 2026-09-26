@@ -1,0 +1,51 @@
+.model skill_gate
+.inputs skill_id3 skill_id2 skill_id1 skill_id0 skill_valid licensed service_available license_type1 license_type0
+.outputs allow route_id3 route_id2 route_id1 route_id0 royalty_bucket1 royalty_bucket0
+
+# allow = skill_valid AND licensed AND service_available
+.names skill_valid licensed n_skill_license
+0- 1
+-0 1
+.names n_skill_license and_skill_license
+0 1
+.names and_skill_license service_available n_allow
+0- 1
+-0 1
+.names n_allow allow
+0 1
+
+# route_id = allow ? skill_id : 0000
+.names allow skill_id3 n_route3
+0- 1
+-0 1
+.names n_route3 route_id3
+0 1
+.names allow skill_id2 n_route2
+0- 1
+-0 1
+.names n_route2 route_id2
+0 1
+.names allow skill_id1 n_route1
+0- 1
+-0 1
+.names n_route1 route_id1
+0 1
+.names allow skill_id0 n_route0
+0- 1
+-0 1
+.names n_route0 route_id0
+0 1
+
+# royalty_bucket = allow ? license_type : 00
+.names allow license_type1 n_royalty1
+0- 1
+-0 1
+.names n_royalty1 royalty_bucket1
+0 1
+.names allow license_type0 n_royalty0
+0- 1
+-0 1
+.names n_royalty0 royalty_bucket0
+0 1
+
+.end

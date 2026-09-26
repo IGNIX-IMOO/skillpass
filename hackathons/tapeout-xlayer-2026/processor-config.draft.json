@@ -1,0 +1,156 @@
+{
+  "status": "deployed",
+  "chain": {
+    "name": "X Layer",
+    "chainId": 196,
+    "nativeAsset": "OKB"
+  },
+  "processor": {
+    "name": "Agent Standard Cells",
+    "symbol": "ACELL",
+    "story": "A reusable standard-cell library for Agent capabilities, licenses, routing, royalty, and verifiable work. OKX.AI lets Agent companies work. IMOO is the first live operator. Still a cow. Learning everything.",
+    "transistorSupply": 100000,
+    "mintPriceOkb": "0.00066",
+    "creationFeeOkb": "0.0066",
+    "parameterDecision": {
+      "status": "selected",
+      "selectedProfile": "scarce",
+      "recommendedProfile": null,
+      "profiles": [
+        {
+          "id": "scarce",
+          "transistorSupply": 100000,
+          "mintPriceOkb": "0.00066"
+        },
+        {
+          "id": "public_standard",
+          "transistorSupply": 1000000,
+          "mintPriceOkb": "0.000066"
+        }
+      ]
+    },
+    "walletPlan": {
+      "status": "created",
+      "actualAccountName": "Account 2",
+      "recommendedName": "IMOO Standard Deployer",
+      "mustBeDedicated": true,
+      "walletAddress": "0x60fda8130b7341027147a1b88cd4c2a1af44ecd0",
+      "fundingStatus": "funded",
+      "requiredCreationFeeOkb": "0.0066",
+      "remainingOkb": "0.17398"
+    },
+    "githubPlan": {
+      "status": "approved_create_new_account",
+      "repositoryName": "skillpass"
+    }
+  },
+  "circuits": [
+    {
+      "name": "Skill Gate Core",
+      "status": "taped_out",
+      "file": "circuits/skill-gate/skill-gate.blif",
+      "nandCount": 62,
+      "latchCount": 0,
+      "canvasBytes": 434,
+      "verifiedInputCombinations": 512,
+      "circuitId": "1",
+      "tapeoutTxHash": "0xcfd76f79153f173d3bbe2a59e19fe6a16f61fc16ddab14c748a2db3a1d8e8eb1"
+    },
+    {
+      "name": "License Quota Core",
+      "status": "taped_out",
+      "file": "circuits/license-quota-step/license-quota-step.blif",
+      "nandCount": 108,
+      "latchCount": 4,
+      "canvasBytes": 772,
+      "verifiedInputCombinations": 128,
+      "circuitId": "2",
+      "tapeoutTxHash": "0x089b6e0ff30abc6142550c64f3d52757beefba8ba6f60d6f40eaa6a09f76dbb3"
+    }
+  ],
+  "deployment": {
+    "factoryAddress": "0x1f09daefa827f02cbb40967cc91b259763760761",
+    "processorAddress": "0x6586c806b192b167e3d56ad669ee60fcb16c3082",
+    "transistorsAddress": "0x4e73a827c375f291a23797bfcd77eeaf8e5653ca",
+    "trustRegistryAddress": "0xD4B5E16316cB0472C5446Fef4bf3960ae451094B",
+    "trustRegistryStatus": "deployed_and_seeded",
+    "deploymentWallet": "0x60fda8130b7341027147a1b88cd4c2a1af44ecd0",
+    "status": "two_cores_and_registry_live",
+    "deploymentTxHash": "0x457bec90ebf5294040779e9eb74575d3308bacd55be97b76f60c7937f534510c",
+    "mintTxHashes": [
+      "0xadab26d858d88f50be0b7eee16e4a2f24fee7c9fef16db67ad7e1634b9716e99",
+      "0xaf9ef69217426c31e57458937d2add4682215dd9084cf55d60557502e47e2146",
+      "0x10220578a67e05298efda0c3e8af545d155585ddbeb739153206e8b72f923f14"
+    ],
+    "circuitIds": [
+      "1",
+      "2"
+    ],
+    "tapeoutTxHashes": [
+      "0xcfd76f79153f173d3bbe2a59e19fe6a16f61fc16ddab14c748a2db3a1d8e8eb1",
+      "0x089b6e0ff30abc6142550c64f3d52757beefba8ba6f60d6f40eaa6a09f76dbb3"
+    ],
+    "trustRegistryDeploymentTxHash": "0xe3c6eea7b18d4acc8f39710bc6cc61aee8ee5b6ed205dec1c79463cf2d5dc540",
+    "trustRegistrySeedTxHashes": {
+      "createPassport": "0xc866bce02acba93e9b4d404f536d1dfcc23a3d251ffcac9c9e663518fa66573f",
+      "issueLicense": "0x52ac6a14cc6d2e1638556c0fe03bdd748cb8e689b357e172fb3e647c77abdc64",
+      "bindService": "0xdf48b3a868d41b4385cfa453cf68cd80477c359fdd84786f1528d479dcf72eeb",
+      "recordQuotaStep": "0xed89edd8bac3e703a34581f947f1e8519ab3bd1b9546b260b395d290cc92e9a3",
+      "recordReceipt": "0xf5b47f5be7d090f8832b79fe3a014cfe552d45c9444563405e8b8c631f7d87ce"
+    },
+    "trustRegistryRealTask": {
+      "service": "research_to_story",
+      "model": "DeepSeek V4 Flash",
+      "resultHash": "0xa7d333bbb3a328d05088fbaf9a0484df51303539fc5102901a058b965745acb8",
+      "issueLicenseTxHash": "0x9d466d79f316598f685745563f8b74318e1be179747af51913133efeae78a3ad",
+      "recordQuotaStepTxHash": "0xee970c67f24115e1401c93968e95e91b93d3b9286d457ac826de0c61a46c3736",
+      "recordReceiptTxHash": "0x4ef03a3dd516b7525d0f2363783eed1056d7e68c5588ec6045bd93041e46be91"
+    },
+    "onChainChecks": [
+      {
+        "circuitId": "1",
+        "case": "allow_research_to_story",
+        "input": "0xfb00",
+        "output": "0x37"
+      },
+      {
+        "circuitId": "1",
+        "case": "reject_missing_license",
+        "input": "0xd100",
+        "output": "0x00"
+      },
+      {
+        "circuitId": "2",
+        "case": "consume_one",
+        "stateIn": "0x03",
+        "input": "0x07",
+        "stateOut": "0x02",
+        "output": "0x21"
+      },
+      {
+        "circuitId": "2",
+        "case": "invalid_license",
+        "stateIn": "0x03",
+        "input": "0x05",
+        "stateOut": "0x03",
+        "output": "0x64"
+      },
+      {
+        "circuitId": "2",
+        "case": "service_unavailable",
+        "stateIn": "0x03",
+        "input": "0x03",
+        "stateOut": "0x03",
+        "output": "0x62"
+      },
+      {
+        "circuitId": "2",
+        "case": "quota_exhausted",
+        "stateIn": "0x00",
+        "input": "0x07",
+        "stateOut": "0x00",
+        "output": "0x06"
+      }
+    ]
+  }
+}
