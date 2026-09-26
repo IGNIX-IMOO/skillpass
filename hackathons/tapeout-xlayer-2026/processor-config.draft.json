@@ -40,8 +40,11 @@
       "remainingOkb": "0.17398"
     },
     "githubPlan": {
-      "status": "approved_create_new_account",
-      "repositoryName": "skillpass"
+      "status": "created",
+      "account": "IGNIX-IMOO",
+      "repositoryName": "skillpass",
+      "repositoryUrl": "https://github.com/IGNIX-IMOO/skillpass",
+      "pagesUrl": "https://ignix-imoo.github.io/skillpass/"
     }
   },
   "circuits": [
