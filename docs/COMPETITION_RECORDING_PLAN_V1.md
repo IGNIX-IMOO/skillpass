@@ -284,7 +284,7 @@ VP8
 最终比赛母版已经完成并更新到新版网站：
 
 ```text
-videos/skillpass-competition-demo/renders/skillpass-competition-final-v2.mp4
+videos/skillpass-competition-demo/renders/skillpass-competition-final.mp4
 1920 × 1080
 30 fps
 2 分 45 秒

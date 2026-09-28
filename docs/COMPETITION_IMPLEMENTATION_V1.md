@@ -356,7 +356,7 @@ ROADMAP
 交付：
 
 - 公网页面；
-- `68.4 秒`比赛主视频；
+- `2 分 45 秒`比赛主视频；
 - GitHub Release 和公开视频附件；
 - GitHub Pages 和 TapeOut Container 公开页面；
 - 评委指南；
@@ -468,7 +468,7 @@ Slice 5 已完成：
 ```text
 链上公开 Demo
 GitHub Pages
-68.4 秒比赛主视频
+2 分 45 秒比赛主视频
 GitHub Release
 评委指南
 真实和模拟清单

@@ -56,7 +56,7 @@ form; do not retype by hand.
 
 | Field | Value |
 | --- | --- |
-| Demo video | `https://github.com/IGNIX-IMOO/skillpass/releases/download/competition-demo-v2/skillpass-competition-final.mp4` — 1920x1080, 68.4s |
+| Demo video | `https://github.com/IGNIX-IMOO/skillpass/releases/download/competition-demo-v2/skillpass-competition-final.mp4` — 1920x1080, 165s / 2分45秒 |
 | Video release | `https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2` |
 | Source project | `https://github.com/IGNIX-IMOO/skillpass` |
 | Public repository | `https://github.com/IGNIX-IMOO/skillpass` |
