@@ -1,6 +1,6 @@
 # SkillPass Product V1
 
-状态：产品设计定稿，待实现
+状态：产品设计定稿，V1 比赛实现已完成并公开验证。
 
 上位协议：Agent Company Protocol
 

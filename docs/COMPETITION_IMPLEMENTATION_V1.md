@@ -1,6 +1,6 @@
 # 比赛演示实施清单 V1
 
-状态：Slice 1 至 Slice 4 和资产包流水线已完成，Slice 5 待开发
+状态：Slice 1 至 Slice 5 和资产包流水线全部完成；公开 Demo、视频和提交材料已发布。
 
 上位文档：
 
@@ -356,10 +356,9 @@ ROADMAP
 交付：
 
 - 公网页面；
-- `2 分 45 秒`比赛主视频；
-- 保留现有 `68 秒`社交预告片；
-- `5 分钟`扩展演示作为问答备用；
-- 录屏；
+- `68.4 秒`比赛主视频；
+- GitHub Release 和公开视频附件；
+- GitHub Pages 和 TapeOut Container 公开页面；
 - 评委指南；
 - 真实和模拟清单。
 
@@ -446,12 +445,12 @@ Node A / Node B 通过本地 HTTP 返回加密份额
 Node C 不启动
 ```
 
-浏览器不再持有三个原始份额。TapeOut Container dry-run 已通过，当前构建包含 6 个文件、
-29 个分块，未发送任何链上交易。
+浏览器不再持有三个原始份额。最终构建包含 6 个文件、29 个分块，TapeOut Container
+dry-run 已通过，正式构建已经发送并逐文件完成 SHA-256 校验。
 
 当前构建已经正式发布到 TapeOut Container，并记录在
-`COMPETITION_DEPLOYMENT_V1.md`。公开 HTTPS 页面不能直接连接本地 HTTP 节点，正式提交
-前必须选择本地录屏或部署 HTTPS 节点。
+`COMPETITION_DEPLOYMENT_V1.md`。公开 HTTPS 页面不能直接连接本地 HTTP 节点，最终选择
+本地录屏加公开链上页面作为证据；公开 HTTPS 节点属于竞赛后生产部署。
 
 Slice 4 已完成：
 
@@ -464,14 +463,13 @@ Slice 4 已完成：
 买断完成后更新同一本 Passport 的 Owner
 ```
 
-下一步进入 Slice 5：
+Slice 5 已完成：
 
 ```text
-公网页面
-2 分 45 秒比赛主视频
-68 秒社交预告片
-5 分钟扩展演示备用
-录屏
+链上公开 Demo
+GitHub Pages
+68.4 秒比赛主视频
+GitHub Release
 评委指南
 真实和模拟清单
 ```

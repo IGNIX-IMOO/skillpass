@@ -1,7 +1,7 @@
 # Submission field sheet
 
 Every value below was read from the running product or verified directly
-against the X Layer node on 2026-09-24. Copy from here into the submission
+against the X Layer node on 2026-09-28. Copy from here into the submission
 form; do not retype by hand.
 
 ## Identity
@@ -56,11 +56,13 @@ form; do not retype by hand.
 
 | Field | Value |
 | --- | --- |
-| Demo video | `videos/skillpass-demo/renders/video.mp4` — 1920x1080, 68.4s |
-| Source project | `videos/skillpass-demo/` (storyboard, script, frames, contact sheets) |
+| Demo video | `https://github.com/IGNIX-IMOO/skillpass/releases/download/competition-demo-v2/skillpass-competition-final.mp4` — 1920x1080, 68.4s |
+| Video release | `https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2` |
+| Source project | `https://github.com/IGNIX-IMOO/skillpass` |
 | Public repository | `https://github.com/IGNIX-IMOO/skillpass` |
 | Public demo URL | `https://1-2-223.tapekit.org/#/demo` |
-| Static bundle | branch `gh-pages`, commit `461d7b5` |
+| GitHub Pages | `https://ignix-imoo.github.io/skillpass/` |
+| Static bundle | GitHub Actions workflow `deploy-public-demo`; every deployment is built from `main` |
 
 ## On-chain public demo (live, use this one)
 
@@ -73,7 +75,7 @@ form; do not retype by hand.
 | Container opened | tx `0x627c4b4b2feddd192fd37b8048ebe342c61f0eeba406763b51e1c687a7ded192` |
 | Activation paid | tx `0x5d3a9b735f0d77faec7cc030840f8afb6ef1a063e747329a58908785828baf7e` |
 | Paid until | 2026-12-23 |
-| Files | 4 files / 533,236 bytes / 24 chunks, every SHA-256 verified on read |
+| Files | 6 files / 592,086 bytes / 29 chunks, every SHA-256 verified on read |
 
 This URL has no server, no DNS and no GitHub dependency. Tapekit reads the
 files straight from X Layer and rejects any byte that does not match the hash
@@ -91,13 +93,14 @@ readable name comes from a small hand-maintained map in
 `app/src/lib/xlayer.ts` (`KNOWN_AGENT_IDS`). Anything not in that map is shown
 as its hash instead of a guessed name.
 
-## Still open
+## Release readiness
 
-| Field | Blocker |
+| Field | Status |
 | --- | --- |
-| Public demo URL | Use the on-chain URL above. GitHub account and repository access are active; GitHub Pages is optional and no longer a submission dependency. |
-| X Post | not written |
-| Contact Email | decided by the submitter |
+| Public demo URL | Complete: on-chain and GitHub Pages are both public |
+| Public video | Complete: GitHub Release asset is public |
+| X Post | Draft ready in `submission/x-post.md`; awaiting posting |
+| Contact Email | Submitter must choose the public or submission email |
 
 ## Verification log
 

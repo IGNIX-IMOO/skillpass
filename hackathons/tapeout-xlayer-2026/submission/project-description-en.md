@@ -1,6 +1,6 @@
 # SkillPass
 
-Status: submission draft; Skill Gate is live, demo evidence pending
+Status: competition release candidate; on-chain, video, and public demo evidence complete
 
 ## One-Line Description
 
@@ -110,11 +110,13 @@ Deployment Wallet: 0x60fda8130b7341027147a1b88cd4c2a1af44ecd0
 Deployment Tx: 0x457bec90ebf5294040779e9eb74575d3308bacd55be97b76f60c7937f534510c
 Skill Gate Circuit ID: 1
 Skill Gate Tape-out Tx: 0xcfd76f79153f173d3bbe2a59e19fe6a16f61fc16ddab14c748a2db3a1d8e8eb1
-License Quota Step Circuit ID (optional): 2
-License Quota Step Tape-out Tx (optional): 0x089b6e0ff30abc6142550c64f3d52757beefba8ba6f60d6f40eaa6a09f76dbb3
+License Quota Step Circuit ID: 2
+License Quota Step Tape-out Tx: 0x089b6e0ff30abc6142550c64f3d52757beefba8ba6f60d6f40eaa6a09f76dbb3
 Trust Registry: 0xD4B5E16316cB0472C5446Fef4bf3960ae451094B
 Trust Registry Deployment Tx: 0xe3c6eea7b18d4acc8f39710bc6cc61aee8ee5b6ed205dec1c79463cf2d5dc540
 Research-to-Story Result Hash: 0xa7d333bbb3a328d05088fbaf9a0484df51303539fc5102901a058b965745acb8
 Research-to-Story Receipt Tx: 0x4ef03a3dd516b7525d0f2363783eed1056d7e68c5588ec6045bd93041e46be91
-Demo: PENDING
+Demo: https://1-2-223.tapekit.org/#/demo
+GitHub: https://github.com/IGNIX-IMOO/skillpass
+Video: https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2
 ```

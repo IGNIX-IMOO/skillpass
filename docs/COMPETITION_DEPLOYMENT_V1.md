@@ -1,8 +1,10 @@
 # SkillPass 比赛版部署记录 V1
 
-状态：新版公开网站已发布，本地节点通道待处理
+状态：最终参赛版本。链上网站、GitHub Pages、公开视频和提交材料均已发布。
 
-发布时间：2026-09-24
+发布时间：2026-09-26
+
+最终复核：2026-09-28
 
 公开地址：
 
@@ -27,9 +29,9 @@ Container：
 ## 一、发布内容
 
 ```text
-assets/index-CICBPt4q.js
-assets/index-Dt7zSrsy.css
-assets/xlayer-C4R0iCWV.js
+assets/index-BRivpf6i.js
+assets/index-B1zyes0h.css
+assets/xlayer-D1v7Es1d.js
 demo-assets/research-to-story/v1.0.0/encrypted-content.bin
 demo-assets/research-to-story/v1.0.0/manifest.json
 index.html
@@ -38,7 +40,7 @@ index.html
 总大小：
 
 ```text
-590,889 bytes
+592,086 bytes
 ```
 
 发布结果：
@@ -46,7 +48,7 @@ index.html
 ```text
 6 files
 29 chunks
-27 transactions in the design-refresh publish
+27 transactions in the final public refresh
 all uploaded files verified by size and SHA-256
 ```
 
@@ -54,22 +56,22 @@ all uploaded files verified by size and SHA-256
 
 ```text
 JS bundle
-0f01cd3cc1908f957a835258117f1a1dc2eca62bec3432d8fb3578ddfc826b2a
+4301d3432609c12f7b335a2d7423036e9c8d8f1ebcdfa02741c248251d096a50
 
 CSS bundle
-d63eafa410b9929780f8c621a72b4b34785980f93cbd15772135c87709d50dc2
+7e28895d832750fa5fe83d4959ba9a72dfbdd37d0696292676923de93cf5722a
 
 X Layer reader
-65b15e1ddbe83695edd596ee105725fbf23b0500387fc61e6019faab04239d29
+e6f9aa3b17c956a2c1c0e9a7845a45431967c426705d339af93338894a402336
 
 Encrypted content
-1ce684ce0903d5d41e28b31c9398ace289286a6cdc1fd2cb2e7569364275c69f
+0d94938bfefc193c82aabb0e66d31eabd830baf8ab51dbe175c02750d6f0c6bd
 
 Manifest
-0fe28f1c196861f3c6f3148da1895b3c37583b9b63301ace5918b5497a848a0d
+21e0a8869f30d86f2a5ced28d749c11fb5a9216d848fd71bdc63585eb15fe36d
 
 index.html
-d25cb17b20109298cb1d8f0df36f18692b2b0e4c643ac78e73e3dd3be0ebd535
+12f9deb8e836c44c1bda5c55e0d3312a63e23083c990ca7da77c14ccab242023
 ```
 
 ## 三、公开网站验证
@@ -120,9 +122,9 @@ http://127.0.0.1:4182
 - 本地浏览器开发版可以完整执行 2-of-3 自动交付；
 - 比赛录屏可以在本地节点运行时完成。
 
-## 五、正式比赛前必须二选一
+## 五、正式比赛交付选择（已确定）
 
-### 方案 A：本地录屏
+最终比赛使用本地录屏和已发布的公开链上页面作为证据：
 
 ```text
 本地网站
@@ -132,19 +134,9 @@ http://127.0.0.1:4182
 + 公开链上网站作为证据
 ```
 
-优点是安全、简单、没有额外托管。缺点是评委无法从公开网页直接操作完整买断。
-
-### 方案 B：公开 HTTPS 节点
-
-```text
-Node A 和 Node B 使用 HTTPS 反向代理或托管服务
-网站通过 HTTPS URL 调用
-Node C 保持离线
-```
-
-优点是完全公开可操作。缺点是必须部署和维护节点，并处理证书、CORS、限流和滥用。
-
-比赛提交前必须明确选择其中一种，不能把本地节点伪装成公开可访问服务。
+公开展示边界保持诚实：评委可以查看链上网站、源码、视频和链上证据；完整 2-of-3
+买断交付在视频和本地验证中演示，不把本地节点伪装成公开可访问服务。公开 HTTPS
+节点留到竞赛后的生产部署。
 
 ## 六、GitHub 托管状态
 
@@ -158,16 +150,27 @@ Actions：enabled
 Allowed actions：all
 ```
 
-已创建 Release：
+已创建公开 Release：
 
 ```text
 https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2
 ```
 
-该 Release 和公开 GitHub 仓库均可作为评委查看源码与备份的地址。
+GitHub Pages：
+
+```text
+https://ignix-imoo.github.io/skillpass/
+```
+
+公开视频：
+
+```text
+https://github.com/IGNIX-IMOO/skillpass/releases/download/competition-demo-v2/skillpass-competition-final.mp4
+```
+
+该 Release、GitHub Pages 和公开 GitHub 仓库均可作为评委查看源码、视频与备份的地址。
 比赛的主 Demo 继续使用无需 GitHub 的链上版本：
 
 ```text
 网站：https://1-2-223.tapekit.org/
-视频：必须上传到 YouTube unlisted、Vimeo 或其他匿名可播放的托管服务
 ```

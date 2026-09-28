@@ -1,6 +1,6 @@
 # Submission Checklist
 
-状态：未完成
+状态：发布候选。代码、链上对象、Demo、视频、GitHub Pages 和提交材料已完成；仅剩 X 发布和 Contact Email 两个提交人动作。
 
 ## 本地设计
 
@@ -30,7 +30,7 @@
 - [x] License Quota Step 完成主网流片和链上调用验证
 - [x] Processor 地址保存
 - [x] Circuit IDs 保存
-- [x] 交易哈希保存（OKLINK 链接待整理）
+- [x] 交易哈希保存并列入 `SUBMISSION_VALUES.md`
 
 ## 产品
 
@@ -56,8 +56,10 @@
 - [x] 英文技术说明
 - [x] 拒绝场景 — 链上已有 `REJECTED` 凭证 `receipt:ee3a9282-59b2-4676-9d31-f4c45d4d36b1`
 - [x] 成功场景
-- [x] Demo 视频 — `videos/skillpass-demo/renders/video.mp4`（1920×1080，68.4s，英文配音 + 中英子句字幕；构建脚本与故事板同目录）
+- [x] Demo 视频 — GitHub Release `competition-demo-v2` 中的 `skillpass-competition-final.mp4`（1920×1080，68.4s，英文配音 + 中英双字幕）
 - [x] 公开链接无需申请权限 — `https://1-2-223.tapekit.org/#/demo` 已上线：静态包存在电路 #1 的链上容器里（`1.2.223.tape`），不需要域名、服务器或 GitHub Pages
+- [x] GitHub Pages — `https://ignix-imoo.github.io/skillpass/`
+- [x] 公开视频 — `https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2`
 
 ## 提交
 
@@ -73,7 +75,7 @@
 
 > 以上字段的取值见 `SUBMISSION_VALUES.md`，已逐条对源核验（含 X Layer 节点只读复检）。
 
-- [ ] X Post
+- [ ] X Post — 文案已准备：`submission/x-post.md`，等待实际发布
 - [ ] Contact Email
 
 ## 安全

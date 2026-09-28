@@ -1,6 +1,6 @@
 # Judge Guide
 
-状态：提交草案，待最终实现证据
+状态：参赛发布候选，全部实现证据已就绪
 
 ## 项目定位
 
@@ -19,6 +19,10 @@ Agent Standard Cells 是 SkillPass 使用的技术实现和 TapeOut Processor。
   `https://github.com/IGNIX-IMOO/skillpass`
 - 链上 Demo：
   `https://1-2-223.tapekit.org/#/demo`
+- GitHub Pages：
+  `https://ignix-imoo.github.io/skillpass/`
+- 演示视频：
+  `https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2`
 
 ## 评审维度映射
 

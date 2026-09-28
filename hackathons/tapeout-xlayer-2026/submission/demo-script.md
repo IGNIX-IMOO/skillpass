@@ -1,6 +1,6 @@
 # SkillPass Demo Script
 
-状态：流程草案，待真实组件接入
+状态：最终演示脚本。公开视频的 68.4 秒成片按此流程制作。
 
 ## Demo 目标
 
@@ -20,7 +20,7 @@
 
 - Processor 已部署；
 - Skill Gate 已流片；
-- License Quota Step 已流片或明确标记为未启用；
+- License Quota Step 已流片并完成链上验证；
 - Trust Registry 已创建；
 - Research-to-Story Service 已发布；
 - 普通 Agent A 和 Agent B 已准备好；

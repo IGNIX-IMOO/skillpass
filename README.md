@@ -63,6 +63,14 @@ Public source and competition materials:
 
 `https://github.com/IGNIX-IMOO/skillpass`
 
+GitHub Pages:
+
+`https://ignix-imoo.github.io/skillpass/`
+
+Public demo video and release:
+
+`https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2`
+
 ## Repository Layout
 
 ```text
