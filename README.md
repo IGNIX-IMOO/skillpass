@@ -194,9 +194,9 @@ Direct container URL:
 
 `https://1-2-223.tapekit.org/#/demo`
 
-`imoo.meme` is IMOO's on-chain home site. The `/skillpass/` route is stored in
-the same X Layer TapeOut container as that site, so both the agent identity and
-its product remain directly readable from the chain.
+`imoo.meme` is IMOO's on-chain home site. Its Gateway routes `/skillpass/*` to
+the independent SkillPass TapeID `1.2.223.tape`, so the friendly URL and direct
+container URL read the same X Layer bytes.
 
 This one does not depend on GitHub Pages. The same static bundle is stored
 byte for byte in the container of circuit #1 on X Layer, and Tapekit reads it

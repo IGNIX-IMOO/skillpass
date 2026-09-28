@@ -57,7 +57,7 @@
 - [x] 拒绝场景 — 链上已有 `REJECTED` 凭证 `receipt:ee3a9282-59b2-4676-9d31-f4c45d4d36b1`
 - [x] 成功场景
 - [x] Demo 视频 — GitHub Release `competition-demo-v2` 中的 `skillpass-competition-final.mp4`（1920×1080，165s / 2分45秒，英文配音 + 中英双字幕）
-- [x] 公开链接无需申请权限 — `https://imoo.meme/skillpass/#/demo` 已上线：文件存在 `imoo.meme` 使用的链上容器里；技术直连为 `https://1-2-223.tapekit.org/#/demo`
+- [x] 公开链接无需申请权限 — `https://imoo.meme/skillpass/#/demo` 已上线：Gateway 将 `/skillpass/*` 路由到独立容器 `0xfdBa7FeDeD2A665B3c7601bEf8CDDDAF162E1836`；技术直连为 `https://1-2-223.tapekit.org/#/demo`
 - [x] GitHub Pages — `https://ignix-imoo.github.io/skillpass/`
 - [x] 公开视频 — `https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2`
 

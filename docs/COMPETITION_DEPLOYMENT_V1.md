@@ -18,6 +18,9 @@ https://imoo.meme/skillpass/#/demo
 https://1-2-223.tapekit.org/#/demo
 ```
 
+`imoo.meme/skillpass/*` 会由自定义 Gateway 映射到 `1.2.223.tape`，读取与
+技术直连相同的独立容器；它不会复制或回退到 IMOO 首页所在的 `3.2.223.tape`。
+
 TapeOut 项目页：
 
 ```text
