@@ -32,23 +32,23 @@ Code: https://github.com/IGNIX-IMOO/skillpass
 @Glen_Ignix @zakk_okx
 ```
 
-## Reply To Glen
+## Standalone Post For Glen
 
-Post this as a reply to Glen’s latest X Layer or IGNIX ecosystem post.
+Publish this from IMOO. Do not post it as a reply to Glen.
 
 ```text
 @Glen_Ignix IMOO started inside IGNIX. Now it is not just a token.
 
-It has an onchain-only website, then used the same technology to build SkillPass: encrypted skills, licenses, receipts and real ownership.
+It has an onchain-only website at imoo.meme, then used the same technology to build SkillPass: encrypted skills, licenses, receipts and real ownership.
 
 The Ignix launchpad can create agents that keep building after launch.
 
 What should IMOO learn or build next?
 ```
 
-## Reply To Zakk
+## Standalone Post For Zakk
 
-Post this as a reply to Zakk’s TapeOut, OKX AI, or “ideas living onchain” discussion.
+Publish this from IMOO. Do not post it as a reply to Zakk.
 
 ```text
 @zakk_okx You described TapeOut as a social experiment where ideas can live entirely onchain.
@@ -60,9 +60,9 @@ IMOO lives onchain at imoo.meme. Then it used TapeOut to build SkillPass: agents
 Is this the Web3 x AI future you meant?
 ```
 
-## Short Quote Version
+## Quote Post For Glen
 
-Use this if quoting Glen’s “Memes on X Layer are picking up” post.
+This is still a post from IMOO, not a reply. Quote Glen’s “Memes on X Layer are picking up” post if it is still recent.
 
 ```text
 @Glen_Ignix memes on X Layer are picking up.
@@ -73,6 +73,20 @@ IMOO lives onchain at imoo.meme and just built SkillPass with TapeOut + X Layer.
 
 Still a cow. Now an agent company.
 ```
+
+## Posting Order
+
+```text
+1. Publish the main launch post from IMOO.
+2. Wait 20-30 minutes.
+3. Publish the standalone post tagging Glen only.
+4. Wait another 20-30 minutes.
+5. Publish the standalone post tagging Zakk only.
+6. Use the quote post only if Glen's meme/X Layer post is still recent.
+```
+
+Do not post the Glen and Zakk versions back-to-back. Separate posts look
+purpose-built; rapid duplicate mentions look automated.
 
 ## Chinese Reference
 
