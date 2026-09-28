@@ -25,6 +25,7 @@ form; do not retype by hand.
 | Trust Registry | `0xD4B5E16316cB0472C5446Fef4bf3960ae451094B` |
 | Processor Factory | `0x1f09daefa827f02cbb40967cc91b259763760761` |
 | Deployment wallet | `0x60fda8130b7341027147a1b88cd4c2a1af44ecd0` |
+| TapeOut project | `https://tapeout.net/#l2/xlayer/0x6586c806b192b167e3d56ad669ee60fcb16c3082` |
 
 ## Circuits
 
@@ -32,6 +33,10 @@ form; do not retype by hand.
 | --- | ---: | --- | ---: |
 | Skill Gate | `1` | `0xcfd76f79153f173d3bbe2a59e19fe6a16f61fc16ddab14c748a2db3a1d8e8eb1` | 71398704 |
 | License Quota Step | `2` | `0x089b6e0ff30abc6142550c64f3d52757beefba8ba6f60d6f40eaa6a09f76dbb3` | 71398766 |
+
+The Processor also contains auxiliary Circuit ID `3` (18 NAND, 2 inputs / 1
+output). It is not used by SkillPass and is not part of the claimed product
+flow.
 
 ## Deployment transactions
 
@@ -75,7 +80,7 @@ form; do not retype by hand.
 | Container opened | tx `0x627c4b4b2feddd192fd37b8048ebe342c61f0eeba406763b51e1c687a7ded192` |
 | Activation paid | tx `0x5d3a9b735f0d77faec7cc030840f8afb6ef1a063e747329a58908785828baf7e` |
 | Paid until | 2026-12-23 |
-| Files | 6 files / 592,086 bytes / 29 chunks, every SHA-256 verified on read |
+| Files | 6 files / 592,120 bytes / 29 chunks, every SHA-256 verified on read |
 
 This URL has no server, no DNS and no GitHub dependency. Tapekit reads the
 files straight from X Layer and rejects any byte that does not match the hash

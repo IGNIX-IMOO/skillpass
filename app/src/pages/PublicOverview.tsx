@@ -134,8 +134,8 @@ export function PublicOverview({
         </div>
         <div>
           <small>Circuits</small>
-          <strong>2 deployed</strong>
-          <span>Skill Gate · License Quota</span>
+          <strong>2 SkillPass Circuits</strong>
+          <span>Skill Gate · License Quota · 3 total on Processor</span>
         </div>
         <div>
           <small>Reference Skill</small>

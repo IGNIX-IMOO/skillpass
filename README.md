@@ -71,6 +71,10 @@ Public demo video and release:
 
 `https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2`
 
+TapeOut project page:
+
+`https://tapeout.net/#l2/xlayer/0x6586c806b192b167e3d56ad669ee60fcb16c3082`
+
 ## Repository Layout
 
 ```text

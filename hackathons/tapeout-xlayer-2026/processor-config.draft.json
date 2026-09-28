@@ -9,6 +9,12 @@
     "name": "Agent Standard Cells",
     "symbol": "ACELL",
     "story": "A reusable standard-cell library for Agent capabilities, licenses, routing, royalty, and verifiable work. OKX.AI lets Agent companies work. IMOO is the first live operator. Still a cow. Learning everything.",
+    "tapeoutProjectUrl": "https://tapeout.net/#l2/xlayer/0x6586c806b192b167e3d56ad669ee60fcb16c3082",
+    "competitionCircuitIds": [
+      "1",
+      "2"
+    ],
+    "auxiliaryCircuitId": "3",
     "transistorSupply": 100000,
     "mintPriceOkb": "0.00066",
     "creationFeeOkb": "0.0066",

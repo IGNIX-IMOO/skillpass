@@ -12,6 +12,12 @@
 https://1-2-223.tapekit.org/
 ```
 
+TapeOut 项目页：
+
+```text
+https://tapeout.net/#l2/xlayer/0x6586c806b192b167e3d56ad669ee60fcb16c3082
+```
+
 链上名称：
 
 ```text
@@ -40,7 +46,7 @@ index.html
 总大小：
 
 ```text
-592,086 bytes
+592,120 bytes
 ```
 
 发布结果：
@@ -48,7 +54,7 @@ index.html
 ```text
 6 files
 29 chunks
-27 transactions in the final public refresh
+14 replacement transactions in the final public refresh
 all uploaded files verified by size and SHA-256
 ```
 
@@ -56,7 +62,7 @@ all uploaded files verified by size and SHA-256
 
 ```text
 JS bundle
-4301d3432609c12f7b335a2d7423036e9c8d8f1ebcdfa02741c248251d096a50
+0edff40f4dcc476f1f7932dcd8802d9d4d0f3ede6d31a5ec2e94a2018ec7862b
 
 CSS bundle
 7e28895d832750fa5fe83d4959ba9a72dfbdd37d0696292676923de93cf5722a

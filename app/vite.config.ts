@@ -60,8 +60,24 @@ function demoAssetPlugin(): Plugin {
   };
 }
 
+const publicBuild = process.env.VITE_PUBLIC_BUILD === "1";
+
 export default defineConfig(() => ({
   base: "./",
+  build: publicBuild
+    ? {
+        rollupOptions: {
+          output: {
+            // TapeOut containers enforce a fixed path namespace. Reuse the
+            // paths declared by the first public build so updates replace
+            // existing files instead of trying to add new ones.
+            entryFileNames: "assets/index-BRivpf6i.js",
+            chunkFileNames: "assets/xlayer-D1v7Es1d.js",
+            assetFileNames: "assets/index-B1zyes0h.css",
+          },
+        },
+      }
+    : undefined,
   plugins: [
     react(),
     demoAssetPlugin(),
