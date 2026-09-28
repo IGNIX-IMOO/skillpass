@@ -23,7 +23,8 @@ Built with TapeOut + X Layer:
 
 Use a Skill. Prove it. Own it.
 
-Demo: https://1-2-223.tapekit.org/#/demo
+IMOO: https://imoo.meme
+Demo: https://imoo.meme/skillpass/#/demo
 Code: https://github.com/IGNIX-IMOO/skillpass
 
 Still a cow. Learning everything.

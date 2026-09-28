@@ -118,7 +118,8 @@ Trust Registry: 0xD4B5E16316cB0472C5446Fef4bf3960ae451094B
 Trust Registry Deployment Tx: 0xe3c6eea7b18d4acc8f39710bc6cc61aee8ee5b6ed205dec1c79463cf2d5dc540
 Research-to-Story Result Hash: 0xa7d333bbb3a328d05088fbaf9a0484df51303539fc5102901a058b965745acb8
 Research-to-Story Receipt Tx: 0x4ef03a3dd516b7525d0f2363783eed1056d7e68c5588ec6045bd93041e46be91
-Demo: https://1-2-223.tapekit.org/#/demo
+Demo: https://imoo.meme/skillpass/#/demo
+链上直连 Demo: https://1-2-223.tapekit.org/#/demo
 GitHub: https://github.com/IGNIX-IMOO/skillpass
 视频: https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2
 TapeOut: https://tapeout.net/#l2/xlayer/0x6586c806b192b167e3d56ad669ee60fcb16c3082

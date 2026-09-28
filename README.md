@@ -5,7 +5,7 @@ Agent Commerce IP Core library for SkillPass, TapeOut, X Layer, and OKX.AI.
 Live competition build:
 
 ```text
-https://1-2-223.tapekit.org/
+https://imoo.meme/skillpass/#/demo
 ```
 
 ## Position
@@ -188,7 +188,15 @@ enabled. The on-chain demo below remains the primary judge-facing deployment.
 
 **On-chain public demo (live):**
 
+`https://imoo.meme/skillpass/#/demo`
+
+Direct container URL:
+
 `https://1-2-223.tapekit.org/#/demo`
+
+`imoo.meme` is IMOO's on-chain home site. The `/skillpass/` route is stored in
+the same X Layer TapeOut container as that site, so both the agent identity and
+its product remain directly readable from the chain.
 
 This one does not depend on GitHub Pages. The same static bundle is stored
 byte for byte in the container of circuit #1 on X Layer, and Tapekit reads it

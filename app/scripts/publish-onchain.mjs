@@ -25,6 +25,12 @@ const flag = (name, fallback) => {
 
 const container = flag("container");
 const holder = flag("from");
+const rawPrefix = flag("prefix", "").replace(/^\/+|\/+$/g, "");
+if (rawPrefix && !/^[A-Za-z0-9._-]+(?:\/[A-Za-z0-9._-]+)*$/.test(rawPrefix)) {
+  console.error("prefix must be a safe relative path");
+  process.exit(1);
+}
+const remotePath = (path) => (rawPrefix ? `${rawPrefix}/${path}` : path);
 const dryRun = argv.includes("--dry-run");
 if (!container) {
   console.error(
@@ -123,6 +129,7 @@ let transactions = 0;
 
 for (const entry of manifest.files) {
   const bytes = readFileSync(`dist-public/${entry.path}`);
+  const path = remotePath(entry.path);
   const contentType = contentTypeFor(entry.path);
   const declared = `0x${entry.sha256}`;
   const chunks = [];
@@ -130,7 +137,7 @@ for (const entry of manifest.files) {
     chunks.push(bytes.subarray(offset, Math.min(offset + CHUNK_MAX, bytes.length)));
   }
 
-  console.log(`\n${entry.path}  ${bytes.length}B  ${chunks.length} chunk(s)  ${contentType}`);
+  console.log(`\n${path}  ${bytes.length}B  ${chunks.length} chunk(s)  ${contentType}`);
 
   // resume: skip whatever already landed, so a retry after a failure never
   // double-appends and never pays twice
@@ -140,7 +147,7 @@ for (const entry of manifest.files) {
     // stale replica can never make us append a chunk that is already stored
     let onChainHash = "0x";
     for (let i = 0; i < 4; i += 1) {
-      const [, , hash, , chunkCount] = await registry.fileInfo(container, entry.path);
+      const [, , hash, , chunkCount] = await registry.fileInfo(container, path);
       already = Math.max(already, Number(chunkCount));
       if (Number(chunkCount) > 0) onChainHash = hash;
       if (already >= chunks.length) break;
@@ -166,8 +173,8 @@ for (const entry of manifest.files) {
     const data = chunks[index];
     const calldata =
       index === 0
-        ? iface.encodeFunctionData("putFile", [container, entry.path, contentType, declared, data])
-        : iface.encodeFunctionData("appendChunk", [container, entry.path, index, data]);
+        ? iface.encodeFunctionData("putFile", [container, path, contentType, declared, data])
+        : iface.encodeFunctionData("appendChunk", [container, path, index, data]);
 
     if (dryRun) {
       // Only chunk 0 can be simulated: appendChunk checks expectIndex against
@@ -193,7 +200,7 @@ for (const entry of manifest.files) {
     // before moving on.
     if (index + 1 < chunks.length) {
       for (let attempt = 0; attempt < 30; attempt += 1) {
-        const [, , , , seen] = await registry.fileInfo(container, entry.path);
+        const [, , , , seen] = await registry.fileInfo(container, path);
         if (Number(seen) >= index + 1) break;
         await new Promise((r) => setTimeout(r, 1000));
       }
@@ -201,7 +208,7 @@ for (const entry of manifest.files) {
   }
 
   if (!dryRun) {
-    const read = await waitForFile(container, entry.path, bytes.length, declared);
+    const read = await waitForFile(container, path, bytes.length, declared);
     console.log(
       `  verified: size ${read.size} chunkCount ${read.chunkCount} hash ${read.matches ? "matches" : "MISMATCH"}`,
     );

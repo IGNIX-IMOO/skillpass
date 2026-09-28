@@ -9,7 +9,13 @@
 公开地址：
 
 ```text
-https://1-2-223.tapekit.org/
+https://imoo.meme/skillpass/#/demo
+```
+
+技术直连地址：
+
+```text
+https://1-2-223.tapekit.org/#/demo
 ```
 
 TapeOut 项目页：
@@ -179,4 +185,5 @@ https://github.com/IGNIX-IMOO/skillpass/releases/download/competition-demo-v2/sk
 
 ```text
 网站：https://1-2-223.tapekit.org/
+友好入口：https://imoo.meme/skillpass/#/demo
 ```

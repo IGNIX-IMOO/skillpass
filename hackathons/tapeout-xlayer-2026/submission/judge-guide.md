@@ -18,6 +18,8 @@ Agent Standard Cells 是 SkillPass 使用的技术实现和 TapeOut Processor。
 - GitHub 源码与参赛材料：
   `https://github.com/IGNIX-IMOO/skillpass`
 - 链上 Demo：
+  `https://imoo.meme/skillpass/#/demo`
+- 技术直连 Demo：
   `https://1-2-223.tapekit.org/#/demo`
 - TapeOut 项目页：
   `https://tapeout.net/#l2/xlayer/0x6586c806b192b167e3d56ad669ee60fcb16c3082`

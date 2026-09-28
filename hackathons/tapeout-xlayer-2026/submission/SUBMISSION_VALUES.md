@@ -65,7 +65,8 @@ flow.
 | Video release | `https://github.com/IGNIX-IMOO/skillpass/releases/tag/competition-demo-v2` |
 | Source project | `https://github.com/IGNIX-IMOO/skillpass` |
 | Public repository | `https://github.com/IGNIX-IMOO/skillpass` |
-| Public demo URL | `https://1-2-223.tapekit.org/#/demo` |
+| Public demo URL | `https://imoo.meme/skillpass/#/demo` |
+| Direct on-chain URL | `https://1-2-223.tapekit.org/#/demo` |
 | GitHub Pages | `https://ignix-imoo.github.io/skillpass/` |
 | Static bundle | GitHub Actions workflow `deploy-public-demo`; every deployment is built from `main` |
 
@@ -73,7 +74,8 @@ flow.
 
 | Field | Value |
 | --- | --- |
-| URL | `https://1-2-223.tapekit.org/#/demo` |
+| Friendly URL | `https://imoo.meme/skillpass/#/demo` |
+| Direct URL | `https://1-2-223.tapekit.org/#/demo` |
 | On-chain name | `1.2.223.tape` (`<#ID>.<area>.<processor>.tape`; X Layer area code 2) |
 | Processor number | `223` (on the X Layer TapeOut factory) |
 | Container | `0xfdBa7FeDeD2A665B3c7601bEf8CDDDAF162E1836` |
